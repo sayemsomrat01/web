@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: none;
+}
+.my-intro{
+    width: 20vw;
+    margin: 200px auto;
+    margin-bottom: 20px;
+    position: relative;
+}
+img{
+    width: 100%;
+    border-radius: 2rem;
+    display: block;
+}
+.my-intro::before{
+    content: " ";
+    border-radius: 2rem;
+    height: 100%;
+    width: 100%;
+    border: 3px solid rgb(238, 53, 238);
+    box-shadow: -3px -3px 20px rgb(238, 53, 238);
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    z-index: -2;
+}
+.my-intro::after{
+    content: " ";
+    border-radius: 2rem;
+    background: rgba(238, 53, 238, 0.2);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -25px;
+    left: -25px;
+    z-index: -1;
+}
+.my-intro:hover::before, .my-intro:hover::after{
+    top: -4px;
+    left: -4px;
+    transition: 1s;
+}
+.name-title{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.details-intro{
+    max-width: 40vw;
+    position: relative;
+    margin: 250px auto;
+    margin-bottom: 0px;
+}
+.details-intro h2{
+    color: rgb(238, 53, 238);
+    font-size: 45px;
+}
+.details-intro hr{
+    height:4px;
+    background: linear-gradient(rgb(238, 53, 238), rgb(22, 53, 198));
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+.details-intro p{
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Great Vibes', cursive;
+}
